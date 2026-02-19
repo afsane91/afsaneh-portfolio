@@ -1,5 +1,5 @@
-import Projects from "../../components/Projects";
 import ProfileIntro from "../../components/ProfileIntro";
+import ProjectsSection from "../../components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -8,11 +8,11 @@ export default function Home() {
       <header className="border-b border-white/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <nav className="flex gap-8 text-sm text-white/80">
-            {/* <a href="#projects" className="hover:text-white">
-              Projects
-            </a> */}
             <a href="#about" className="hover:text-white">
               Home
+            </a>
+            <a href="#projects" className="hover:text-white">
+              Projects
             </a>
           </nav>
 
@@ -37,7 +37,7 @@ export default function Home() {
       </header>
 
       <ProfileIntro />
-      {/* <Projects /> */}
+      <ProjectsSection />
       <footer className="border-t border-white/10 py-10 text-center text-sm text-white/60 mt-auto">
         Afsaneh Lotfi © {new Date().getFullYear()}
       </footer>
